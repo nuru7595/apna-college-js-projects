@@ -49,47 +49,159 @@
                     Status: <span class="text-green-600">Active</span>
                 </div>
             </div>
-            <!-- PS 1 Q 1 -->
+            <!-- level 1 Question 1 -->
             <div class="container">
-                <div class="title-top">Practice Set 1</div>
-                <div class="content flex justify-between lg:items-center flex-col lg:flex-row">
+                <div class="title-top">Level 1</div>
+                <div
+                    class="content flex justify-between lg:items-center flex-col lg:flex-row"
+                >
                     <div class="lg:w-1/2">
                         <img
-                            class="w-full rounded-3xl"
+                            class="w-full xl:w-1/2 xl:mx-auto rounded-3xl"
                             src="img/pen.png"
                             alt="Pen"
                         />
                     </div>
                     <div class="lg:w-1/2 py-2 lg:px-2">
-                        <p>Name: <span id="penName" class="text-yellow-500"></span></p>
-                        <p>Color: <span id="penColor" class="text-yellow-500"></span></p>
-                        <p>Rating: <span id="penRating" class="text-yellow-500"></span> out of 5</p>
-                        <p>Deal of the day: <span id="penDeal" class="text-yellow-500"></span></p>
-                        <p>Price: <span id="penPrice" class="text-yellow-500"></span> M.R.P</p>
-                        <p>Discount: <span id="penDiscount" class="text-yellow-500"></span>% off</p>
+                        <p>
+                            Name:
+                            <span id="penName" class="text-yellow-500"></span>
+                        </p>
+                        <p>
+                            Color:
+                            <span id="penColor" class="text-yellow-500"></span>
+                        </p>
+                        <p>
+                            Rating:
+                            <span id="penRating" class="text-yellow-500"></span>
+                            out of 5
+                        </p>
+                        <p>
+                            Deal of the day:
+                            <span id="penDeal" class="text-yellow-500"></span>
+                        </p>
+                        <p>
+                            Price:
+                            <span id="penPrice" class="text-yellow-500"></span>
+                            M.R.P
+                        </p>
+                        <p>
+                            Discount:
+                            <span
+                                id="penDiscount"
+                                class="text-yellow-500"
+                            ></span
+                            >% off
+                        </p>
                     </div>
                 </div>
                 <div class="title-bottom">Question 1</div>
             </div>
-            <!-- PS 1 Q 2 -->
+            <!-- level 1 Question 2 -->
             <div class="container">
-                <div class="title-top">Practice Set 1</div>
-                <div class="content flex justify-between lg:items-center flex-col lg:flex-row">
+                <div class="title-top">Level 1</div>
+                <div
+                    class="content flex justify-between lg:items-center flex-col lg:flex-row"
+                >
                     <div class="lg:w-1/2">
                         <img
-                            class="w-full rounded-3xl"
+                            class="w-full xl:w-2/3 xl:mx-auto rounded-3xl"
                             src="img/profile.png"
                             alt="Pen"
                         />
                     </div>
                     <div class="lg:w-1/2 py-2 lg:px-2">
-                        <p>User Name: <span id="profileName" class="text-yellow-500"></span></p>
-                        <p>Following: <span id="profileisFollowing" class="text-yellow-500"></span></p>
-                        <p>Posts: <span id="profilePosts" class="text-yellow-500"></span></p>
-                        <p>Followers: <span id="profileFollowers" class="text-yellow-500"></span> K</p>
-                        <p>Following: <span id="profileFollowing" class="text-yellow-500"></span></p>
-                        <p>Bio: <span id="profileBio" class="text-yellow-500"></span></p>
+                        <p>
+                            User Name:
+                            <span
+                                id="profileName"
+                                class="text-yellow-500"
+                            ></span>
+                        </p>
+                        <p>
+                            Following:
+                            <span
+                                id="profileisFollowing"
+                                class="text-yellow-500"
+                            ></span>
+                        </p>
+                        <p>
+                            Posts:
+                            <span
+                                id="profilePosts"
+                                class="text-yellow-500"
+                            ></span>
+                        </p>
+                        <p>
+                            Followers:
+                            <span
+                                id="profileFollowers"
+                                class="text-yellow-500"
+                            ></span>
+                            K
+                        </p>
+                        <p>
+                            Following:
+                            <span
+                                id="profileFollowing"
+                                class="text-yellow-500"
+                            ></span>
+                        </p>
+                        <p>
+                            Bio:
+                            <span
+                                id="profileBio"
+                                class="text-yellow-500"
+                            ></span>
+                        </p>
                     </div>
+                </div>
+                <div class="title-bottom">Question 2</div>
+            </div>
+            <!-- Level 2 Question 1 -->
+            <div class="container">
+                <div class="title-top">Level 2</div>
+                <div class="content">
+                    <label class="block" for="l2q1Input">
+                        Check your number if it is a multiple of 5 or not.
+                    </label>
+                    <input
+                        class="block w-full border-black border rounded p-2 mt-2"
+                        type="text"
+                        maxlength="15"
+                        id="l2q1Input"
+                        placeholder="Enter a number here..."
+                    />
+                    <input
+                        id="l2q1Btn"
+                        type="submit"
+                        value="Check"
+                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
+                    />
+                    <span class="text-yellow-500 ml-2" id="l2q1Result"></span>
+                </div>
+                <div class="title-bottom">Question 1</div>
+            </div>
+            <!-- Level 2 Question 2 -->
+            <div class="container">
+                <div class="title-top">Level 2</div>
+                <div class="content">
+                    <label class="block" for="l2q2Input">
+                        Enter your mark to get your grade:
+                    </label>
+                    <input
+                        class="block w-full border-black border rounded p-2 mt-2"
+                        type="number"
+                        id="l2q2Input"
+                        placeholder="Enter mark here..."
+                    />
+                    <input
+                        id="l2q2Btn"
+                        type="submit"
+                        value="Check"
+                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
+                    />
+                    <span class="text-yellow-500 ml-2" id="l2q2Result"></span>
                 </div>
                 <div class="title-bottom">Question 2</div>
             </div>

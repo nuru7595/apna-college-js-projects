@@ -586,6 +586,18 @@ video {
   }
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -594,28 +606,42 @@ video {
   width: 100%;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .flex-col{
   flex-direction: column;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.justify-center{
-  justify-content: center;
 }
 
 .justify-between{
   justify-content: space-between;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
 .rounded-3xl{
   border-radius: 1.5rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .p-2{
   padding: 0.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-1{
@@ -628,19 +654,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.pt-3{
-  padding-top: 0.75rem;
-}
-
-.pt-2{
-  padding-top: 0.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -648,36 +661,6 @@ video {
 .text-green-600{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-rose-600{
-  --tw-text-opacity: 1;
-  color: rgb(225 29 72 / var(--tw-text-opacity));
-}
-
-.text-teal-600{
-  --tw-text-opacity: 1;
-  color: rgb(13 148 136 / var(--tw-text-opacity));
-}
-
-.text-yellow-600{
-  --tw-text-opacity: 1;
-  color: rgb(202 138 4 / var(--tw-text-opacity));
-}
-
-.text-yellow-300{
-  --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity));
-}
-
-.text-yellow-400{
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .text-yellow-500{
@@ -748,33 +731,11 @@ body{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+}
 
-  .md\:flex{
-    display: flex;
-  }
-
-  .md\:w-1\/2{
-    width: 50%;
-  }
-
-  .md\:items-center{
-    align-items: center;
-  }
-
-  .md\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .md\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .md\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+.hover\:bg-yellow-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px){
@@ -797,20 +758,16 @@ body{
 }
 
 @media (min-width: 1180px){
-  .xl\:flex{
-    display: flex;
+  .xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .xl\:w-1\/2{
     width: 50%;
   }
 
-  .xl\:items-center{
-    align-items: center;
-  }
-
-  .xl\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .xl\:w-2\/3{
+    width: 66.666667%;
   }
 }

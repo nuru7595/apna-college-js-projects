@@ -11,7 +11,7 @@ const pen = {
     rating: 4,
     isDeal: true,
     price: 270,
-    discount: 5
+    discount: 5,
 };
 // Pen Details
 penName.innerText = pen.name;
@@ -34,7 +34,7 @@ const profile = {
     posts: 195,
     followers: 569,
     following: 4,
-    bio: "To educate someone is the highest privilege &#10084;"
+    bio: "To educate someone is the highest privilege &#10084;",
 };
 // Profile Details
 profileName.innerText = profile.name;
@@ -44,3 +44,42 @@ profileFollowers.innerText = profile.followers;
 profileFollowing.innerText = profile.following;
 profileBio.innerHTML = profile.bio;
 // Showing Values;
+const l2q1Btn = document.getElementById("l2q1Btn");
+let l2q1Result = document.getElementById("l2q1Result");
+l2q1Btn.addEventListener("click", () => {
+    let l2q1Num = document.getElementById("l2q1Input").value;
+    if (l2q1Num == "") {
+        l2q1Result.innerText = "Please enter a number!";
+    } else if (l2q1Num == 0) {
+        l2q1Result.innerText = "Please enter a number!";
+    } else if (l2q1Num % 5 == 0) {
+        l2q1Result.innerText = "Yes, " + l2q1Num + " is a multiple of 5.";
+    } else {
+        l2q1Result.innerText = "No, " + l2q1Num + " is not a multiple of 5.";
+    }
+});
+// level 2 Question 1
+const l2q2Btn = document.getElementById("l2q2Btn");
+const l2q2Result = document.getElementById("l2q2Result");
+l2q2Btn.addEventListener("click", () => {
+    let l2q2Num = document.getElementById("l2q2Input").value;
+    l2q2Num = Number(l2q2Num);
+    if (l2q2Num <= 100 && l2q2Num >= 80) {
+        l2q2Result.innerHTML = "Congratulations, You have got: A+";
+    } else if (l2q2Num <= 79 && l2q2Num >= 70) {
+        l2q2Result.innerHTML = "You have got: A";
+    } else if (l2q2Num <= 69 && l2q2Num >= 60) {
+        l2q2Result.innerHTML = "You have got: A-";
+    } else if (l2q2Num <= 59 && l2q2Num >= 50) {
+        l2q2Result.innerHTML = "You have got: B";
+    } else if (l2q2Num <= 49 && l2q2Num >= 40) {
+        l2q2Result.innerHTML = "You have got: C";
+    } else if (l2q2Num <= 39 && l2q2Num >= 33) {
+        l2q2Result.innerHTML = "You have got: D";
+    } else if (l2q2Num >= 0 && l2q2Num <= 32) {
+        l2q2Result.innerHTML = "You have got: F";
+    }else {
+        l2q2Result.innerHTML = "Please enter a valid mark";
+    }
+});
+// Grade Calculator;
