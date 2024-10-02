@@ -14,33 +14,98 @@
     </head>
     <body>
         <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-        <header>
-            <nav class="rounded-t-full py-3 text-center bg-white border-2 border-black">
-                <div class="font-bold text-xl md:text-2xl">Javascript Projects</div>
-            </nav>
+        <header class="title-top">
+            <p>Javascript Projects</p>
         </header>
         <!--~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~-->
         <main>
             <div class="container">
-                Contents Loading...
+                <div class="title-top">Details</div>
+                <div class="content text-center">
+                    <p class="py-1">
+                        Started on:
+                        <span class="text-green-600">1 October 2024</span>
+                    </p>
+                    <!-- <p class="py-1">Completed on: <span class="text-green-600"></span></p> -->
+                    <p class="py-1">
+                        Last Updated on:
+                        <span class="text-green-600">2 October 2024</span>
+                    </p>
+                    <p class="py-1">
+                        Total Time Spent:
+                        <span class="text-green-600">2H 29M</span>
+                    </p>
+                    <p class="py-1">
+                        Course:
+                        <a
+                            href="https://www.youtube.com/watch?v=VlPiVmYuoqw"
+                            target="_blank"
+                            class="text-green-600 underline"
+                            >Apna College</a
+                        >
+                    </p>
+                </div>
+                <div class="title-bottom">
+                    Status: <span class="text-green-600">Active</span>
+                </div>
             </div>
-        </main>
-        <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
-        <footer>
-            <div class="container text-center">
-                <p class="py-1">Status: <span class="text-green-600">Active</span></p>
-                <p class="py-1">Started on: <span class="text-green-600">1 October 2024</span></p>
-                <!-- <p class="py-1">Completed on: <span class="text-green-600"></span></p> -->
-                <p class="py-1">Last Updated on: <span class="text-green-600">2 October 2024</span></p>
-                <p class="py-1">Total Time Spent: <span class="text-green-600">1H 15M</span></p>
-                <p class="py-1">Course: <a href="https://www.youtube.com/watch?v=VlPiVmYuoqw" target="_blank" class="text-green-600 underline">Apna College</a></p>
+            <!-- PS 1 Q 1 -->
+            <div class="container">
+                <div class="title-top">Practice Set 1</div>
+                <div class="content flex justify-between lg:items-center flex-col lg:flex-row">
+                    <div class="lg:w-1/2">
+                        <img
+                            class="w-full rounded-3xl"
+                            src="img/pen.png"
+                            alt="Pen"
+                        />
+                    </div>
+                    <div class="lg:w-1/2 py-2 lg:px-2">
+                        <p>Name: <span id="penName" class="text-yellow-500"></span></p>
+                        <p>Color: <span id="penColor" class="text-yellow-500"></span></p>
+                        <p>Rating: <span id="penRating" class="text-yellow-500"></span> out of 5</p>
+                        <p>Deal of the day: <span id="penDeal" class="text-yellow-500"></span></p>
+                        <p>Price: <span id="penPrice" class="text-yellow-500"></span> M.R.P</p>
+                        <p>Discount: <span id="penDiscount" class="text-yellow-500"></span>% off</p>
+                    </div>
+                </div>
+                <div class="title-bottom">Question 1</div>
+            </div>
+            <!-- PS 1 Q 2 -->
+            <div class="container">
+                <div class="title-top">Practice Set 1</div>
+                <div class="content flex justify-between lg:items-center flex-col lg:flex-row">
+                    <div class="lg:w-1/2">
+                        <img
+                            class="w-full rounded-3xl"
+                            src="img/profile.png"
+                            alt="Pen"
+                        />
+                    </div>
+                    <div class="lg:w-1/2 py-2 lg:px-2">
+                        <p>User Name: <span id="profileName" class="text-yellow-500"></span></p>
+                        <p>Following: <span id="profileisFollowing" class="text-yellow-500"></span></p>
+                        <p>Posts: <span id="profilePosts" class="text-yellow-500"></span></p>
+                        <p>Followers: <span id="profileFollowers" class="text-yellow-500"></span> K</p>
+                        <p>Following: <span id="profileFollowing" class="text-yellow-500"></span></p>
+                        <p>Bio: <span id="profileBio" class="text-yellow-500"></span></p>
+                    </div>
+                </div>
+                <div class="title-bottom">Question 2</div>
             </div>
             <!--  -->
-            <div class="rounded-b-full py-3 text-center bg-white border-2 border-black">
-                <p class="font-bold text-xl md:text-2xl">Created by Nuru</p>
+            <div class="container">
+                <div class="title-top"></div>
+                <div class="content">Loading...</div>
+                <div class="title-bottom"></div>
             </div>
+            <!--  -->
+        </main>
+        <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+        <footer class="title-bottom">
+            <p>Created by Nuru</p>
         </footer>
-        <!--~~~~~~~~~~~~~~~ Js ~~~~~~~~~~~~~~~-->
-        <script src="main.js"></script>
     </body>
+    <!--~~~~~~~~~~~~~~~ Js ~~~~~~~~~~~~~~~-->
+    <script src="main.js"></script>
 </html>
