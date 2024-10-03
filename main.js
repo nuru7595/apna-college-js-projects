@@ -107,12 +107,12 @@ l3q2Btn.addEventListener("click", () => {
     l3q2Num = Number(l3q2Num);
     const x = 7;
     let i;
-    for(i = 1; l3q2Num != x; i++){
+    for (i = 1; l3q2Num != x; i++) {
         l3q2Num = prompt("Attempt no " + i + " failed! Try again.");
     }
     if (i == 1) {
         l3q2Result.innerText = "Correct! you did it in 1st try!";
-    } else if (i == 2){
+    } else if (i == 2) {
         l3q2Result.innerText = "Correct! you did it in 2nd try!";
     } else if (i == 3) {
         l3q2Result.innerText = "Correct! you did it in 3rd try!";
@@ -134,3 +134,25 @@ l3q3Btn.addEventListener("click", () => {
     }
 });
 // Username;
+const l4q1Result = document.getElementById("l4q1Result");
+const marks = [85, 97, 44, 37, 76, 60];
+let sum = 0;
+for (let mark of marks) {
+    sum += mark;
+}
+l4q1Result.innerText = `The average mark of the class is ${sum / marks.length}`;
+// Average mark;
+const l4q2Result = document.getElementById("l4q2Result");
+const prices = [250, 645, 300, 900, 50];
+for (let i = 0; i < prices.length; i++) {
+    prices[i] -= prices[i] / 10;
+}
+l4q2Result.innerText = `After applying offer new prices will be [${prices}]`;
+// 10% Discount on products;
+const companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+companies.shift();
+companies.splice(1, 1, "Ola");
+companies.push("Amazon");
+const l4q3Result = document.getElementById("l4q3Result");
+l4q3Result.innerText = `Answer: [${companies}]`;
+// level 4 qeustion 3;
