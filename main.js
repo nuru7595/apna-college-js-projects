@@ -121,3 +121,16 @@ l3q2Btn.addEventListener("click", () => {
     }
 });
 // Nuru's favorite number;
+const l3q3Btn = document.getElementById("l3q3Btn");
+const l3q3Result = document.getElementById("l3q3Result");
+l3q3Btn.addEventListener("click", () => {
+    let l3q3Input = document.getElementById("l3q3Input").value;
+    l3q3Input = l3q3Input.toLowerCase();
+    let len = l3q3Input.length;
+    if (len < 3 || len > 16) {
+        l3q3Result.innerText = "Allowed charecter range 3-16.";
+    } else {
+        l3q3Result.innerText = `@${l3q3Input}${len}`;
+    }
+});
+// Username;
