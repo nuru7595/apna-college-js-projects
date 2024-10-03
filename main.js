@@ -156,3 +156,53 @@ companies.push("Amazon");
 const l4q3Result = document.getElementById("l4q3Result");
 l4q3Result.innerText = `Answer: [${companies}]`;
 // level 4 qeustion 3;
+const l5q1Btn = document.getElementById("l5q1Btn");
+const l5q1Result = document.getElementById("l5q1Result");
+l5q1Btn.addEventListener("click", () => {
+    let l5q1Input = document.getElementById("l5q1Input").value;
+    let output = vowelFunc(l5q1Input);
+    l5q1Result.innerText = output;
+});
+function vowelFunc(input) {
+    let count = 0;
+    let msg;
+    for (let i of input) {
+        if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u') {
+            count++;
+        }
+    };
+    if (count == 0) {
+        msg = `There is no vowel in your text`;
+    } else if (count == 1) {
+        msg = `There is a vowel in your text`;
+    } else {
+        msg = `There are ${count} vowels in your text`;
+    }
+    return msg;
+};
+// Vowel Calculator;
+const l5q2Btn = document.getElementById("l5q2Btn");
+const l5q2Result = document.getElementById("l5q2Result");
+l5q2Btn.addEventListener("click", () => {
+    let l5q2Input = document.getElementById("l5q2Input").value;
+    let outPut = vowelArrowFunc(l5q2Input);
+    l5q2Result.innerText = outPut;
+});
+const vowelArrowFunc = (input) => {
+    let count = 0;
+    let msg;
+    for (let i of input) {
+        if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u') {
+            count++;
+        }
+    }
+    if (count == 0) {
+        msg = `There is no vowel in your text`;
+    } else if (count == 1) {
+        msg = `There is a vowel in your text`;
+    } else {
+        msg = `There are ${count} vowels in your text`;
+    }
+    return msg;
+}
+// Vowel Calculator using arrow function;
