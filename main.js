@@ -262,7 +262,7 @@ l5q5Btn.addEventListener("click", () => {
         let sum = l5q5Arr.reduce((res, curr) => {
             return res + curr;
         });
-        l5q5R2.innerText = `Substraction: ${sum}`;
+        l5q5R2.innerText = `Summation: ${sum}`;
         let mul = l5q5Arr.reduce((res, curr) => {
             return res * curr;
         });
