@@ -149,12 +149,27 @@ for (let i = 0; i < prices.length; i++) {
 }
 l4q2Result.innerText = `After applying offer new prices will be [${prices}]`;
 // 10% Discount on products;
-const companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+const companies = [
+    "Bloomberg",
+    "Microsoft",
+    "Uber",
+    "Google",
+    "IBM",
+    "Netflix",
+];
 companies.shift();
 companies.splice(1, 1, "Ola");
 companies.push("Amazon");
 const l4q3Result = document.getElementById("l4q3Result");
-l4q3Result.innerText = `Answer: [${companies}]`;
+l4q3Result.append("Answer: [ ");
+companies.forEach((val, i) => {
+    if (i == companies.length - 1) {
+        l4q3Result.append(val);
+    } else {
+        l4q3Result.append(val + ", ");
+    }
+});
+l4q3Result.append(" ]");
 // level 4 qeustion 3;
 const l5q1Btn = document.getElementById("l5q1Btn");
 const l5q1Result = document.getElementById("l5q1Result");
@@ -167,32 +182,7 @@ function vowelFunc(input) {
     let count = 0;
     let msg;
     for (let i of input) {
-        if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u') {
-            count++;
-        }
-    };
-    if (count == 0) {
-        msg = `There is no vowel in your text`;
-    } else if (count == 1) {
-        msg = `There is a vowel in your text`;
-    } else {
-        msg = `There are ${count} vowels in your text`;
-    }
-    return msg;
-};
-// Vowel Calculator;
-const l5q2Btn = document.getElementById("l5q2Btn");
-const l5q2Result = document.getElementById("l5q2Result");
-l5q2Btn.addEventListener("click", () => {
-    let l5q2Input = document.getElementById("l5q2Input").value;
-    let outPut = vowelArrowFunc(l5q2Input);
-    l5q2Result.innerText = outPut;
-});
-const vowelArrowFunc = (input) => {
-    let count = 0;
-    let msg;
-    for (let i of input) {
-        if (i == 'a' || i == 'e' || i == 'i' || i == 'o' || i == 'u') {
+        if (i == "a" || i == "e" || i == "i" || i == "o" || i == "u") {
             count++;
         }
     }
@@ -205,4 +195,78 @@ const vowelArrowFunc = (input) => {
     }
     return msg;
 }
+// Vowel Calculator;
+const l5q2Btn = document.getElementById("l5q2Btn");
+const l5q2Result = document.getElementById("l5q2Result");
+l5q2Btn.addEventListener("click", () => {
+    let l5q2Input = document.getElementById("l5q2Input").value;
+    let outPut = vowelArrowFunc(l5q2Input);
+    l5q2Result.innerText = outPut;
+});
+const vowelArrowFunc = (input) => {
+    let count = 0;
+    let msg;
+    for (let i of input) {
+        if (i == "a" || i == "e" || i == "i" || i == "o" || i == "u") {
+            count++;
+        }
+    }
+    if (count == 0) {
+        msg = `There is no vowel in your text`;
+    } else if (count == 1) {
+        msg = `There is a vowel in your text`;
+    } else {
+        msg = `There are ${count} vowels in your text`;
+    }
+    return msg;
+};
 // Vowel Calculator using arrow function;
+let l5q3Result = document.getElementById("l5q3Result");
+const numArray = [1, 2, 3, 4, 5, 6];
+l5q3Result.append("Answer: [ ");
+numArray.forEach((val, i) => {
+    if (i == numArray.length - 1) {
+        l5q3Result.append(`${val * val}`);
+    } else {
+        l5q3Result.append(`${val * val} ,`);
+    }
+});
+l5q3Result.append(" ]");
+// Level 5 Question 3;
+const l5q4Ans = document.getElementById("l5q4Ans");
+const l5q4Arr = [84, 91, 96, 88, 90, 99, 79, 86];
+const l5q4NewArr = l5q4Arr.filter((val) => {
+    return val >= 90;
+});
+l5q4Ans.append(` [ ${l5q4NewArr} ]`);
+// Level 5 Question 4;
+const l5q5Btn = document.getElementById("l5q5Btn");
+const l5q5Err = document.getElementById("l5q5Err");
+const l5q5R1 = document.getElementById("l5q5R1");
+const l5q5R2 = document.getElementById("l5q5R2");
+const l5q5R3 = document.getElementById("l5q5R3");
+l5q5Btn.addEventListener("click", () => {
+    const l5q5Input = document.getElementById("l5q5Input").value;
+    let l5q5Arr = [];
+    if (l5q5Input < 2 || l5q5Input > 30) {
+        l5q5Err.innerText = "Invalid Range!!";
+        l5q5R1.innerText = "";
+        l5q5R2.innerText = "";
+        l5q5R3.innerText = "";
+    } else {
+        l5q5Err.innerText = "";
+        for (let i = 1; i <= l5q5Input; i++) {
+            l5q5Arr[i - 1] = i;
+        }
+        l5q5R1.innerText = `Genarated Array: [ ${l5q5Arr} ]`;
+        let sum = l5q5Arr.reduce((res, curr) => {
+            return res + curr;
+        });
+        l5q5R2.innerText = `Substraction: ${sum}`;
+        let mul = l5q5Arr.reduce((res, curr) => {
+            return res * curr;
+        });
+        l5q5R3.innerText = `Multiplication: ${mul}`;
+    }
+});
+// Level 5 Question 5;
