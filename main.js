@@ -248,7 +248,7 @@ const l5q5R3 = document.getElementById("l5q5R3");
 l5q5Btn.addEventListener("click", () => {
     const l5q5Input = document.getElementById("l5q5Input").value;
     let l5q5Arr = [];
-    if (l5q5Input < 2 || l5q5Input > 30) {
+    if (l5q5Input < 2 || l5q5Input > 16) {
         l5q5Err.innerText = "Invalid Range!!";
         l5q5R1.innerText = "";
         l5q5R2.innerText = "";
@@ -258,7 +258,7 @@ l5q5Btn.addEventListener("click", () => {
         for (let i = 1; i <= l5q5Input; i++) {
             l5q5Arr[i - 1] = i;
         }
-        l5q5R1.innerText = `Genarated Array: [ ${l5q5Arr} ]`;
+        l5q5R1.innerText = `Genarated Array: [${l5q5Arr}]`;
         let sum = l5q5Arr.reduce((res, curr) => {
             return res + curr;
         });
