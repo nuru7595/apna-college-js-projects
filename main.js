@@ -270,3 +270,11 @@ l5q5Btn.addEventListener("click", () => {
     }
 });
 // Level 5 Question 5;
+const l6q1 = document.getElementById("l6q1");
+l6q1.innerHTML += " <span class='text-yellow-500'>from Apna College Students.</span>";
+// Level 6 Question 1;
+const l6q2 = document.querySelectorAll(".box");
+l6q2.forEach((div, i) => {
+    div.innerText = `Box ${i + 1}`;
+});
+// Level 6 Question 2;
