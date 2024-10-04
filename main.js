@@ -271,7 +271,8 @@ l5q5Btn.addEventListener("click", () => {
 });
 // Level 5 Question 5;
 const l6q1 = document.getElementById("l6q1");
-l6q1.innerHTML += " <span class='text-yellow-500'>from Apna College Students.</span>";
+l6q1.innerHTML +=
+    " <span class='text-yellow-500'>from Apna College Students.</span>";
 // Level 6 Question 1;
 const l6q2 = document.querySelectorAll(".box");
 l6q2.forEach((div, i) => {
@@ -289,3 +290,25 @@ document.getElementById("l7q1").prepend(l7q1Btn);
 const l7q2 = document.getElementById("l7q2");
 l7q2.classList.add("bg-yellow-300");
 // Level 7 Question 2;
+const mode = document.querySelectorAll(".mode");
+const l8q1Btn = document.querySelector("#l8q1Btn");
+let dark = false;
+l8q1Btn.addEventListener("click", () => {
+    if (dark == false) {
+        mode.forEach((i) => {
+            i.style.color = "white";
+            i.style.backgroundColor = "black";
+            i.style.borderColor = "white";
+            l8q1Btn.innerText = "Light Mode";
+        });
+        dark = true;
+    } else {
+        mode.forEach((i) => {
+            i.style.color = "black";
+            i.style.backgroundColor = "white";
+            i.style.borderColor = "black";
+            l8q1Btn.innerText = "Dark Mode";
+        });
+        dark = false;
+    }
+});
