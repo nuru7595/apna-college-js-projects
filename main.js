@@ -278,3 +278,14 @@ l6q2.forEach((div, i) => {
     div.innerText = `Box ${i + 1}`;
 });
 // Level 6 Question 2;
+const l7q1Btn = document.createElement("button");
+l7q1Btn.innerText = "Click me";
+l7q1Btn.style.backgroundColor = "red";
+l7q1Btn.style.color = "white";
+l7q1Btn.style.padding = "4px 12px";
+l7q1Btn.style.borderRadius = "6px";
+document.getElementById("l7q1").prepend(l7q1Btn);
+// Level 7 Question 1;
+const l7q2 = document.getElementById("l7q2");
+l7q2.classList.add("bg-yellow-300");
+// Level 7 Question 2;
