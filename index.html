@@ -29,11 +29,11 @@
                     <!-- <p class="py-1">Completed on: <span class="text-green-600"></span></p> -->
                     <p class="py-1">
                         Last Updated on:
-                        <span class="text-green-600">4 October 2024</span>
+                        <span class="text-green-600">5 October 2024</span>
                     </p>
                     <p class="py-1">
                         Total Time Spent:
-                        <span class="text-green-600">12H 27M</span>
+                        <span class="text-green-600">14H 32M</span>
                     </p>
                     <p class="py-1">
                         Course:
@@ -435,7 +435,7 @@
                 <div class="title-bottom">Quesiton 2</div>
             </div>
             <!-- Level 7 Question 1 -->
-            <div class="container" id="active">
+            <div class="container">
                 <div class="title-top">Level 7</div>
                 <div class="content text-center" id="l7q1"></div>
                 <div class="title-bottom">Quesiton 1</div>
@@ -456,17 +456,50 @@
                 </div>
                 <div class="title-bottom mode">Question 1</div>
             </div>
-            <!-- Level 9 Question 1 -->
-            <div class="container">
+            <!-- Level 9 -->
+            <div class="container" id="active">
                 <div class="title-top">Level 9</div>
-                <div class="content text-center">Comming on ... 5 Oct 2024</div>
+                <div class="content text-center space-y-4 md:space-y-7">
+                    <div class="choices flex justify-center items-center gap-3 md:gap-5 lg:gap-10">
+                        <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer" id="rock">
+                            <img class="h-full object-cover" src="img/rock.png" alt="Rock">
+                        </div>
+                        <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer" id="paper">
+                            <img class="h-full object-cover" src="img/paper.png" alt="Paper">
+                        </div>
+                        <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer" id="scissors">
+                            <img class="h-full object-cover" src="img/scissors.png" alt="Scissors">
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="score-board flex justify-evenly items-center gap-5">
+                        <div class="user">
+                            <p id="user" class="text-3xl md:text-5xl">0</p>
+                            <p>You</p>
+                        </div>
+                        <div class="com">
+                            <p id="com" class="text-3xl md:text-5xl">0</p>
+                            <p>Com</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div>
+                        <p class="bg-yellow-500 text-white text-lg py-2 inline-block rounded-full px-6 md:text-2xl" id="info">Tap one to start</p>
+                    </div>
+                    <!-- audio -->
+                    <div class="hidden">
+                        <audio type="audio/mpeg" src="audio/draw.MP3" id="draw"></audio>
+                        <audio type="audio/mpeg" src="audio/correct.MP3" id="correct"></audio>
+                        <audio type="audio/mpeg" src="audio/wrong.MP3" id="wrong"></audio>
+                    </div>
+                </div>
                 <div class="title-bottom">Stone, Paper & Scissors</div>
             </div>
-            <!-- Level 9 Question 2 -->
+            <!-- Level 10 Question 1 -->
             <div class="container hidden">
-                <div class="title-top">Loading...</div>
-                <div class="content"></div>
-                <div class="title-bottom"></div>
+                <div class="title-top">Level 10</div>
+                <div class="content">Comming soon...</div>
+                <div class="title-bottom">Question 1</div>
             </div>
         </main>
         <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->

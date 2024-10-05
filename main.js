@@ -11,7 +11,7 @@ const pen = {
     rating: 4,
     isDeal: true,
     price: 270,
-    discount: 5,
+    discount: 5
 };
 // Pen Details
 penName.innerText = pen.name;
@@ -312,3 +312,79 @@ l8q1Btn.addEventListener("click", () => {
         dark = false;
     }
 });
+// Level 8;
+const choices = document.querySelectorAll(".choice");
+// event;
+choices.forEach((choice) => {
+    choice.addEventListener("click", () => {
+        const user = choice.getAttribute("id");
+        // Got user value;
+        const com = random();
+        // Got com value;
+        const win = compare(user, com);
+        // Got compare value;
+        scoreCount(win, user, com);
+        // Score Updated;
+    });
+});
+// com random;
+const random = () => {
+    const arr = ["rock", "paper", "scissors"];
+    const ran = Math.floor(Math.random() * arr.length);
+    return arr[ran];
+}
+// compare;
+const compare = (user, com) => {
+    let win;
+    if (user === com) {
+        win = "draw";
+    } else if (user === "rock") {
+        if (com === "paper") {
+            win = false;
+        } else {
+            win = true;
+        }
+    } else if (user === "paper") {
+        if (com === "rock") {
+            win = true;
+        } else {
+            win = false;
+        }
+    } else {
+        if (com === "rock") {
+            win = false;
+        } else {
+            win = true;
+        }
+    }
+    return win;
+}
+// Score count;
+let userScore = 0;
+let comScore = 0;
+const info = document.getElementById("info");
+const scoreCount = (win, user, com) => {
+    if (win == true) {
+        document.getElementById("correct").play();
+        userScore++;
+        document.getElementById("user").innerText = userScore;
+        info.innerText = `${user} beats ${com}`;
+        info.classList.remove("bg-yellow-500");
+        info.classList.remove("bg-red-500");
+        info.classList.add("bg-green-500");
+    } else if (win == false) {
+        document.getElementById("wrong").play();
+        comScore++;
+        document.getElementById("com").innerText = comScore;
+        info.innerText = `${com} beats ${user}`;
+        info.classList.remove("bg-yellow-500");
+        info.classList.remove("bg-green-500");
+        info.classList.add("bg-red-500");
+    } else {
+        document.getElementById("draw").play();
+        info.innerText = `Both ${user}, Draw`;
+        info.classList.remove("bg-green-500");
+        info.classList.remove("bg-red-500");
+        info.classList.add("bg-yellow-500");
+    }
+}
