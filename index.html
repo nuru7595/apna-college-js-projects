@@ -444,7 +444,9 @@
             <div class="container">
                 <div class="title-top">Level 7</div>
                 <div class="content text-center">
-                    <p class="py-1 px-3 rounded-full" id="l7q2">Hi, I am a paragraph.</p>
+                    <p class="py-1 px-3 rounded-full" id="l7q2">
+                        Hi, I am a paragraph.
+                    </p>
                 </div>
                 <div class="title-bottom">Quesiton 1</div>
             </div>
@@ -452,7 +454,12 @@
             <div class="container">
                 <div class="title-top mode">Level 8</div>
                 <div class="content h-20 flex justify-center items-center mode">
-                    <button class="border border-black py-1 px-4 rounded-full mode" id="l8q1Btn">Dark Mode</button>
+                    <button
+                        class="border border-black py-1 px-4 rounded-full mode"
+                        id="l8q1Btn"
+                    >
+                        Dark Mode
+                    </button>
                 </div>
                 <div class="title-bottom mode">Question 1</div>
             </div>
@@ -460,19 +467,44 @@
             <div class="container" id="active">
                 <div class="title-top">Level 9</div>
                 <div class="content text-center space-y-4 md:space-y-7">
-                    <div class="choices flex justify-center items-center gap-3 md:gap-5 lg:gap-10">
-                        <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer" id="rock">
-                            <img class="h-full object-cover" src="img/rock.png" alt="Rock">
+                    <div
+                        class="choices flex justify-center items-center gap-3 md:gap-5 lg:gap-10"
+                    >
+                        <div
+                            class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
+                            id="rock"
+                        >
+                            <img
+                                class="h-full object-cover"
+                                src="img/rock.png"
+                                alt="Rock"
+                            />
                         </div>
-                        <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer" id="paper">
-                            <img class="h-full object-cover" src="img/paper.png" alt="Paper">
+                        <div
+                            class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
+                            id="paper"
+                        >
+                            <img
+                                class="h-full object-cover"
+                                src="img/paper.png"
+                                alt="Paper"
+                            />
                         </div>
-                        <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer" id="scissors">
-                            <img class="h-full object-cover" src="img/scissors.png" alt="Scissors">
+                        <div
+                            class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
+                            id="scissors"
+                        >
+                            <img
+                                class="h-full object-cover"
+                                src="img/scissors.png"
+                                alt="Scissors"
+                            />
                         </div>
                     </div>
                     <!--  -->
-                    <div class="score-board flex justify-evenly items-center gap-5">
+                    <div
+                        class="score-board flex justify-evenly items-center gap-5"
+                    >
                         <div class="user">
                             <p id="user" class="text-3xl md:text-5xl">0</p>
                             <p>You</p>
@@ -484,21 +516,68 @@
                     </div>
                     <!--  -->
                     <div>
-                        <p class="bg-yellow-500 text-white text-lg py-2 inline-block rounded-full px-6 md:text-2xl" id="info">Tap one to start</p>
+                        <p
+                            class="bg-yellow-500 text-white text-lg py-2 inline-block rounded-full px-6 md:text-2xl"
+                            id="info"
+                        >
+                            Tap one to start
+                        </p>
                     </div>
                     <!-- audio -->
                     <div class="hidden">
-                        <audio type="audio/mpeg" src="audio/draw.MP3" id="draw"></audio>
-                        <audio type="audio/mpeg" src="audio/correct.MP3" id="correct"></audio>
-                        <audio type="audio/mpeg" src="audio/wrong.MP3" id="wrong"></audio>
+                        <audio
+                            type="audio/mpeg"
+                            src="audio/draw.MP3"
+                            id="draw"
+                        ></audio>
+                        <audio
+                            type="audio/mpeg"
+                            src="audio/correct.MP3"
+                            id="correct"
+                        ></audio>
+                        <audio
+                            type="audio/mpeg"
+                            src="audio/wrong.MP3"
+                            id="wrong"
+                        ></audio>
                     </div>
                 </div>
                 <div class="title-bottom">Stone, Paper & Scissors</div>
             </div>
             <!-- Level 10 Question 1 -->
-            <div class="container hidden">
+            <div class="container">
                 <div class="title-top">Level 10</div>
-                <div class="content">Comming soon...</div>
+                <div class="content">
+                    <p>
+                        Welcome,
+                        <span id="l10q1Name" class="bg-yellow-500"></span>
+                    </p>
+                    <p>
+                        Your email:
+                        <span id="l10q1Email" class="bg-yellow-500"></span>
+                    </p>
+                    <p>
+                        Student:
+                        <span id="l10q1Msg" class="bg-yellow-500"></span>
+                    </p>
+                </div>
+                <div class="title-bottom">Question 1</div>
+            </div>
+            <!-- Level 10 Question 2 -->
+            <div class="container">
+                <div class="title-top">Level 10</div>
+                <div class="content">
+                    <p>
+                        Teacher:
+                        <span id="l10q2Msg" class="bg-yellow-500"></span>
+                    </p>
+                </div>
+                <div class="title-bottom">Question 2</div>
+            </div>
+            <!-- Level 11 Question 1 -->
+            <div class="container">
+                <div class="title-top">Level 11</div>
+                <div class="content text-center">Upcomming....</div>
                 <div class="title-bottom">Question 1</div>
             </div>
         </main>

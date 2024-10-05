@@ -11,7 +11,7 @@ const pen = {
     rating: 4,
     isDeal: true,
     price: 270,
-    discount: 5
+    discount: 5,
 };
 // Pen Details
 penName.innerText = pen.name;
@@ -332,7 +332,7 @@ const random = () => {
     const arr = ["rock", "paper", "scissors"];
     const ran = Math.floor(Math.random() * arr.length);
     return arr[ran];
-}
+};
 // compare;
 const compare = (user, com) => {
     let win;
@@ -358,7 +358,7 @@ const compare = (user, com) => {
         }
     }
     return win;
-}
+};
 // Score count;
 let userScore = 0;
 let comScore = 0;
@@ -387,4 +387,41 @@ const scoreCount = (win, user, com) => {
         info.classList.remove("bg-red-500");
         info.classList.add("bg-yellow-500");
     }
+};
+// rock, paper, scissors;
+const l10q1Name = document.getElementById("l10q1Name");
+const l10q1Email = document.getElementById("l10q1Email");
+const l10q1Msg = document.getElementById("l10q1Msg");
+
+class User {
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+    }
 }
+
+class Student extends User {
+    constructor(name, email) {
+        super(name, email);
+    }
+    viewData() {
+        l10q1Msg.innerText = "I am from Student Class.";
+    }
+}
+
+const student1 = new Student("Nuru", "nuru@gmail.com");
+const student2 = new Student("Demo", "demo@gmail.com");
+
+l10q1Name.innerText = student1.name;
+l10q1Email.innerText = student1.email;
+student1.viewData();
+// Level 10 Question 1;
+const l10q2Msg = document.getElementById("l10q2Msg");
+class Teacher extends User {
+    editData() {
+        l10q2Msg.innerText = "I am from Teacher Class.";
+    }
+}
+const teacher1 = new Teacher();
+teacher1.editData();
+// Level 10 Question 2;
