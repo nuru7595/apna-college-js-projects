@@ -493,3 +493,18 @@ l11Btn.addEventListener("click", () => {
     apiData();
 }); // Using Async, Await;
 // Level 11;
+const l12Btn = document.getElementById("l12Btn");
+const l12Result = document.getElementById("l12Result");
+// Getting Elements;
+const url = "https://catfact.ninja/fact";
+const response = async () => {
+    l12Result.classList.add("mt-2");
+    l12Result.innerText = "Fetching Data...";
+    let promise = await fetch(url);
+    let json = await promise.json();
+    l12Result.innerText = json.fact;
+}
+// Process;
+l12Btn.addEventListener("click", response);
+// Work on click;
+// Level 12;
