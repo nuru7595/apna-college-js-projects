@@ -425,3 +425,71 @@ class Teacher extends User {
 const teacher1 = new Teacher();
 teacher1.editData();
 // Level 10 Question 2;
+let l11Btn = document.getElementById("l11Btn");
+const l11Result1 = document.getElementById("l11Result1");
+const l11Result2 = document.getElementById("l11Result2");
+const l11Result3 = document.getElementById("l11Result3");
+// Getting elements;
+const msg1 = "I";
+const msg2 = "Love";
+const msg3 = "You";
+// Server Data;
+// function api(container, msg, next) {
+//     setTimeout(() => {
+//         container.innerHTML = msg;
+//         if (next) {
+//             next();
+//         }
+//     }, 2000);
+// }; // Fetching Data;
+// Showing Data;
+// l11Btn.addEventListener("click", () => {
+//     l11Btn.classList.add("hidden");
+//     api(l11Result1, msg1, () => {
+//         api(l11Result2, msg2, () => {
+//             api(l11Result3, msg3);
+//         });
+//     });
+// });
+// Using Callback Hell;
+// function api(container, msg) {
+//     return new Promise((resolve, error) => {
+//         setTimeout(() => {
+//             container.innerHTML = msg;
+//             resolve();
+//         }, 2000);
+//     });
+// }; // Fetching Data;
+// // Showing Data;
+// l11Btn.addEventListener("click", () => {
+//     api(l11Result1, msg1).then(() => {
+//         api(l11Result2, msg2).then(() => {
+//             api(l11Result3, msg3);
+//         });
+//     });
+// });
+// Using Promises, then, catch;
+const api = (container, msg) => {
+    return new Promise((resolve, error) => {
+        setTimeout(() => {
+            container.innerText = msg;
+            resolve();
+        }, 2600);
+    });
+}
+// Cloud Api;
+const apiData = async () => {
+    await api(l11Result1, msg1);
+    await api(l11Result2, msg2);
+    await api(l11Result3, msg3);
+    setTimeout(() => {
+        l11Btn.innerHTML = "Revealed!!";
+    }, 2200);
+}
+// Fetching Data;
+l11Btn.addEventListener("click", () => {
+    l11Btn.setAttribute("disabled", "");
+    l11Btn.innerHTML = "<span class='loader mx-auto'></span>";
+    apiData();
+}); // Using Async, Await;
+// Level 11;

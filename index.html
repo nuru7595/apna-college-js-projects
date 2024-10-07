@@ -1,591 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <!--~~~~~~~~~~~~~~~ Icon ~~~~~~~~~~~~~~~-->
 
-        <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
-        <link rel="stylesheet" href="./output.css" />
-        <!--~~~~~~~~~~~~~~~ Title ~~~~~~~~~~~~~~~-->
-        <title>Javascript Projects</title>
-    </head>
-    <body>
-        <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-        <header class="title-top">
-            <p>Javascript Projects</p>
-        </header>
-        <!--~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~-->
-        <main>
-            <div class="container">
-                <div class="title-top">Details</div>
-                <div class="content text-center">
-                    <p class="py-1">
-                        Started on:
-                        <span class="text-green-600">1 October 2024</span>
-                    </p>
-                    <!-- <p class="py-1">Completed on: <span class="text-green-600"></span></p> -->
-                    <p class="py-1">
-                        Last Updated on:
-                        <span class="text-green-600">5 October 2024</span>
-                    </p>
-                    <p class="py-1">
-                        Total Time Spent:
-                        <span class="text-green-600">16H 49M</span>
-                    </p>
-                    <p class="py-1">
-                        Course:
-                        <a
-                            href="https://www.youtube.com/watch?v=VlPiVmYuoqw"
-                            target="_blank"
-                            class="text-green-600 underline"
-                            >Apna College</a
-                        >
-                    </p>
-                </div>
-                <div class="title-bottom">
-                    Status: <span class="text-green-600">Active</span>
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!--~~~~~~~~~~~~~~~ Icon ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="./output.css" />
+    <!--~~~~~~~~~~~~~~~ Title ~~~~~~~~~~~~~~~-->
+    <title>Javascript Projects</title>
+</head>
+
+<body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header class="title-top">
+        <p>Javascript Projects</p>
+    </header>
+    <!--~~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~-->
+    <main>
+        <div class="container">
+            <div class="title-top">Details</div>
+            <div class="content text-center">
+                <p class="py-1">
+                    Started on:
+                    <span class="text-green-600">1 October 2024</span>
+                </p>
+                <p class="py-1">
+                    Last Updated on:
+                    <span class="text-green-600">7 October 2024</span>
+                </p>
+                <p class="py-1">
+                    Total Time Spent:
+                    <span class="text-green-600">19H 59M</span>
+                </p>
+                <p class="py-1">
+                    Course:
+                    <a href="https://www.youtube.com/watch?v=VlPiVmYuoqw" target="_blank"
+                        class="text-green-600 underline">Apna College</a>
+                </p>
             </div>
-            <!-- level 1 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 1</div>
-                <div
-                    class="content flex justify-between lg:items-center flex-col lg:flex-row"
-                >
-                    <div class="lg:w-1/2">
-                        <img
-                            class="w-full xl:w-1/2 xl:mx-auto rounded-3xl"
-                            src="img/pen.png"
-                            alt="Pen"
-                        />
-                    </div>
-                    <div class="lg:w-1/2 py-2 lg:px-2">
-                        <p>
-                            Name:
-                            <span id="penName" class="text-yellow-500"></span>
-                        </p>
-                        <p>
-                            Color:
-                            <span id="penColor" class="text-yellow-500"></span>
-                        </p>
-                        <p>
-                            Rating:
-                            <span id="penRating" class="text-yellow-500"></span>
-                            out of 5
-                        </p>
-                        <p>
-                            Deal of the day:
-                            <span id="penDeal" class="text-yellow-500"></span>
-                        </p>
-                        <p>
-                            Price:
-                            <span id="penPrice" class="text-yellow-500"></span>
-                            M.R.P
-                        </p>
-                        <p>
-                            Discount:
-                            <span
-                                id="penDiscount"
-                                class="text-yellow-500"
-                            ></span
-                            >% off
-                        </p>
-                    </div>
-                </div>
-                <div class="title-bottom">Question 1</div>
+            <div class="title-bottom">
+                Status: <span class="text-green-600">Active</span>
             </div>
-            <!-- level 1 Question 2 -->
-            <div class="container">
-                <div class="title-top">Level 1</div>
-                <div
-                    class="content flex justify-between lg:items-center flex-col lg:flex-row"
-                >
-                    <div class="lg:w-1/2">
-                        <img
-                            class="w-full xl:w-2/3 xl:mx-auto rounded-3xl"
-                            src="img/profile.png"
-                            alt="Pen"
-                        />
-                    </div>
-                    <div class="lg:w-1/2 py-2 lg:px-2">
-                        <p>
-                            User Name:
-                            <span
-                                id="profileName"
-                                class="text-yellow-500"
-                            ></span>
-                        </p>
-                        <p>
-                            Following:
-                            <span
-                                id="profileisFollowing"
-                                class="text-yellow-500"
-                            ></span>
-                        </p>
-                        <p>
-                            Posts:
-                            <span
-                                id="profilePosts"
-                                class="text-yellow-500"
-                            ></span>
-                        </p>
-                        <p>
-                            Followers:
-                            <span
-                                id="profileFollowers"
-                                class="text-yellow-500"
-                            ></span>
-                            K
-                        </p>
-                        <p>
-                            Following:
-                            <span
-                                id="profileFollowing"
-                                class="text-yellow-500"
-                            ></span>
-                        </p>
-                        <p>
-                            Bio:
-                            <span
-                                id="profileBio"
-                                class="text-yellow-500"
-                            ></span>
-                        </p>
-                    </div>
+        </div>
+        <!-- level 1 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 1</div>
+            <div class="content flex justify-between lg:items-center flex-col lg:flex-row">
+                <div class="lg:w-1/2">
+                    <img class="w-full xl:w-1/2 xl:mx-auto rounded-3xl" src="img/pen.png" alt="Pen" />
                 </div>
-                <div class="title-bottom">Question 2</div>
-            </div>
-            <!-- Level 2 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 2</div>
-                <div class="content">
-                    <label class="block" for="l2q1Input">
-                        Check your number if it is a multiple of 5 or not.
-                    </label>
-                    <input
-                        class="block w-full border-black border rounded p-2 mt-2"
-                        type="text"
-                        maxlength="15"
-                        id="l2q1Input"
-                        placeholder="Enter a number here..."
-                    />
-                    <input
-                        id="l2q1Btn"
-                        type="submit"
-                        value="Check"
-                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
-                    />
-                    <span class="text-yellow-500 ml-2" id="l2q1Result"></span>
-                </div>
-                <div class="title-bottom">Question 1</div>
-            </div>
-            <!-- Level 2 Question 2 -->
-            <div class="container">
-                <div class="title-top">Level 2</div>
-                <div class="content">
-                    <label class="block" for="l2q2Input">
-                        Enter your mark to get your grade:
-                    </label>
-                    <input
-                        class="block w-full border-black border rounded p-2 mt-2"
-                        type="number"
-                        id="l2q2Input"
-                        placeholder="Enter mark here..."
-                    />
-                    <input
-                        id="l2q2Btn"
-                        type="submit"
-                        value="Check"
-                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
-                    />
-                    <span class="text-yellow-500 ml-2" id="l2q2Result"></span>
-                </div>
-                <div class="title-bottom">Question 2</div>
-            </div>
-            <!-- Level 3 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 3</div>
-                <div class="content">
-                    <label for="l3q1Input" class="block"
-                        >Enter a number to genarate even numbers:</label
-                    >
-                    <input
-                        type="text"
-                        id="l3q1Input"
-                        placeholder="0 - 200 max"
-                        maxlength="15"
-                        class="block w-full border-black border rounded p-2 mt-2"
-                    />
-                    <input
-                        type="submit"
-                        value="Genarate"
-                        id="l3q1Btn"
-                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
-                    />
-                    <span class="text-yellow-500 ml-2" id="l3q1Result"></span>
-                </div>
-                <div class="title-bottom">Question 1</div>
-            </div>
-            <!-- Level 3 Question 2 -->
-            <div class="container">
-                <div class="title-top">Level 3</div>
-                <div class="content text-center">
-                    <p>Guess Nuru's favorite number</p>
-                    <button
-                        id="l3q2Btn"
-                        class="my-2 border border-black px-3 py-1 rounded bg-yellow-300"
-                    >
-                        Start the Game
-                    </button>
-                    <p class="text-yellow-500 ml-2" id="l3q2Result"></p>
-                </div>
-                <div class="title-bottom">Question 2</div>
-            </div>
-            <!-- Level 3 Question 3 -->
-            <div class="container">
-                <div class="title-top">Level 3</div>
-                <div class="content">
-                    <label for="l3q3Input" class="block"
-                        >Enter your name:</label
-                    >
-                    <input
-                        type="text"
-                        id="l3q3Input"
-                        placeholder="Your name..."
-                        maxlength="16"
-                        class="block w-full border-black border rounded p-2 mt-2"
-                    />
-                    <input
-                        type="submit"
-                        value="Get your username"
-                        id="l3q3Btn"
-                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
-                    />
-                    <span class="text-yellow-500 ml-2" id="l3q3Result"></span>
-                </div>
-                <div class="title-bottom">Question 3</div>
-            </div>
-            <!-- Level 4 Qustion 1 -->
-            <div class="container">
-                <div class="title-top">Level 4</div>
-                <div class="content">
+                <div class="lg:w-1/2 py-2 lg:px-2">
                     <p>
-                        Question: For a given array with marks of students ->
-                        [85, 97, 44, 37, 76, 60]
-                    </p>
-                    <p>Find the average marks of the entire class.</p>
-                    <p class="text-yellow-500" id="l4q1Result"></p>
-                </div>
-                <div class="title-bottom">Question 1</div>
-            </div>
-            <!-- Level 4 Qustion 2 -->
-            <div class="container">
-                <div class="title-top">Level 4</div>
-                <div class="content">
-                    <p>
-                        Question: For a given array with prices of 5 items ->
-                        [250, 645, 300, 900, 50]
+                        Name:
+                        <span id="penName" class="text-yellow-500"></span>
                     </p>
                     <p>
-                        All items have an offer of 10% OFF on them. Change the
-                        array to store final price after applying offer.
+                        Color:
+                        <span id="penColor" class="text-yellow-500"></span>
                     </p>
-                    <p class="text-yellow-500" id="l4q2Result"></p>
-                </div>
-                <div class="title-bottom">Question 2</div>
-            </div>
-            <!-- Level 4 Qustion 3 -->
-            <div class="container">
-                <div class="title-top">Level 4</div>
-                <div class="content">
                     <p>
-                        Question: "Bloomberg", "Microsoft", "Uber", "Google",
-                        "IBM", "Netflix"
+                        Rating:
+                        <span id="penRating" class="text-yellow-500"></span>
+                        out of 5
                     </p>
-                    <p>a. Remove the first company.</p>
-                    <p>b. Remove Uber & add Ola in its place.</p>
-                    <p>c. Add Amazon at the end.</p>
-                    <p class="text-yellow-500" id="l4q3Result"></p>
-                </div>
-                <div class="title-bottom">Question 3</div>
-            </div>
-            <!-- Level 5 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 5</div>
-                <div class="content">
-                    <label for="l5q1Input" class="block"
-                        >Vowel calculator:</label
-                    >
-                    <input
-                        type="text"
-                        id="l5q1Input"
-                        placeholder="Enter a text..."
-                        class="block w-full border-black border rounded p-2 mt-2"
-                    />
-                    <input
-                        type="submit"
-                        value="Count"
-                        id="l5q1Btn"
-                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
-                    />
-                    <span class="text-yellow-500 ml-2" id="l5q1Result"></span>
-                </div>
-                <div class="title-bottom">Question 1</div>
-            </div>
-            <!-- Level 5 Question 2 -->
-            <div class="container">
-                <div class="title-top">Level 5</div>
-                <div class="content">
-                    <label for="l5q2Input" class="block"
-                        >Vowel calculator: ( Using Arrow Function )</label
-                    >
-                    <input
-                        type="text"
-                        id="l5q2Input"
-                        placeholder="Enter a text..."
-                        class="block w-full border-black border rounded p-2 mt-2"
-                    />
-                    <input
-                        type="submit"
-                        value="Count"
-                        id="l5q2Btn"
-                        class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200"
-                    />
-                    <span class="text-yellow-500 ml-2" id="l5q2Result"></span>
-                </div>
-                <div class="title-bottom">Question 2</div>
-            </div>
-            <!-- Level 5 Question 3 -->
-            <div class="container">
-                <div class="title-top">Level 5</div>
-                <div class="content">
                     <p>
-                        Question: For a given array of numbers, print the square
-                        of each vlaue using the forEach loop.
+                        Deal of the day:
+                        <span id="penDeal" class="text-yellow-500"></span>
                     </p>
-                    <p>Exmp: [ 1, 2, 3, 4, 5, 6, 7 ]</p>
-                    <p class="text-yellow-500" id="l5q3Result"></p>
-                </div>
-                <div class="title-bottom">Question 3</div>
-            </div>
-            <!-- Level 5 Question 4 -->
-            <div class="container">
-                <div class="title-top">Level 5</div>
-                <div class="content">
                     <p>
-                        Question: For a given array of marks of students, Filter
-                        out of the marks of students that scored 90+.
+                        Price:
+                        <span id="penPrice" class="text-yellow-500"></span>
+                        M.R.P
                     </p>
-                    <p>Exmp: [ 84, 91, 96, 88, 90, 99, 79, 86]</p>
-                    <p class="text-yellow-500" id="l5q4Ans">Answer:</p>
-                </div>
-                <div class="title-bottom">Question 4</div>
-            </div>
-            <!-- Level 5 Question 5 -->
-            <div class="container">
-                <div class="title-top">Level 5</div>
-                <div class="content">
-                    <label for="l5q5Input" class="block">
-                        Enter a number between 2-16:
-                    </label>
-                    <input
-                        type="number"
-                        id="l5q5Input"
-                        placeholder="Enter a number..."
-                        class="block w-full border-black border rounded p-2 mt-2"
-                    />
-                    <input
-                        type="submit"
-                        value="Proccess"
-                        id="l5q5Btn"
-                        class="border border-black px-3 py-1 my-2 cursor-pointer hover:bg-yellow-200"
-                    />
-                    <span class="text-red-500 ml-2" id="l5q5Err"></span>
-                    <p class="text-yellow-500" id="l5q5R1"></p>
-                    <p class="text-yellow-500" id="l5q5R2"></p>
-                    <p class="text-yellow-500" id="l5q5R3"></p>
-                </div>
-                <div class="title-bottom">Question 5</div>
-            </div>
-            <!-- Level 6 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 6</div>
-                <div class="content text-center">
-                    <h2 id="l6q1">Hello JavaScript</h2>
-                </div>
-                <div class="title-bottom">Quesiton 1</div>
-            </div>
-            <!-- Level 6 Question 2 -->
-            <div class="container">
-                <div class="title-top">Level 6</div>
-                <div class="content flex justify-center items-center gap-1">
-                    <div
-                        class="box h-16 w-16 bg-indigo-400 border-2 border-black text-center text-yellow-500"
-                    ></div>
-                    <div
-                        class="box h-16 w-16 bg-indigo-400 border-2 border-black text-center text-yellow-500"
-                    ></div>
-                    <div
-                        class="box h-16 w-16 bg-indigo-400 border-2 border-black text-center text-yellow-500"
-                    ></div>
-                </div>
-                <div class="title-bottom">Quesiton 2</div>
-            </div>
-            <!-- Level 7 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 7</div>
-                <div class="content text-center" id="l7q1"></div>
-                <div class="title-bottom">Quesiton 1</div>
-            </div>
-            <!-- Level 7 Question 2 -->
-            <div class="container">
-                <div class="title-top">Level 7</div>
-                <div class="content text-center">
-                    <p class="py-1 px-3 rounded-full" id="l7q2">
-                        Hi, I am a paragraph.
+                    <p>
+                        Discount:
+                        <span id="penDiscount" class="text-yellow-500"></span>% off
                     </p>
                 </div>
-                <div class="title-bottom">Quesiton 1</div>
             </div>
-            <!-- Level 8 Question 1 -->
-            <div class="container">
-                <div class="title-top mode">Level 8</div>
-                <div class="content h-20 flex justify-center items-center mode">
-                    <button
-                        class="border border-black py-1 px-4 rounded-full mode"
-                        id="l8q1Btn"
-                    >
-                        Dark Mode
-                    </button>
+            <div class="title-bottom">Question 1</div>
+        </div>
+        <!-- level 1 Question 2 -->
+        <div class="container">
+            <div class="title-top">Level 1</div>
+            <div class="content flex justify-between lg:items-center flex-col lg:flex-row">
+                <div class="lg:w-1/2">
+                    <img class="w-full xl:w-2/3 xl:mx-auto rounded-3xl" src="img/profile.png" alt="Pen" />
                 </div>
-                <div class="title-bottom mode">Question 1</div>
+                <div class="lg:w-1/2 py-2 lg:px-2">
+                    <p>
+                        User Name:
+                        <span id="profileName" class="text-yellow-500"></span>
+                    </p>
+                    <p>
+                        Following:
+                        <span id="profileisFollowing" class="text-yellow-500"></span>
+                    </p>
+                    <p>
+                        Posts:
+                        <span id="profilePosts" class="text-yellow-500"></span>
+                    </p>
+                    <p>
+                        Followers:
+                        <span id="profileFollowers" class="text-yellow-500"></span>
+                        K
+                    </p>
+                    <p>
+                        Following:
+                        <span id="profileFollowing" class="text-yellow-500"></span>
+                    </p>
+                    <p>
+                        Bio:
+                        <span id="profileBio" class="text-yellow-500"></span>
+                    </p>
+                </div>
             </div>
-            <!-- Level 9 -->
-            <div class="container" id="active">
-                <div class="title-top">Level 9</div>
-                <div class="content text-center space-y-4 md:space-y-7">
-                    <div
-                        class="choices flex justify-center items-center gap-3 md:gap-5 lg:gap-10"
-                    >
-                        <div
-                            class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
-                            id="rock"
-                        >
-                            <img
-                                class="h-full object-cover"
-                                src="img/rock.png"
-                                alt="Rock"
-                            />
-                        </div>
-                        <div
-                            class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
-                            id="paper"
-                        >
-                            <img
-                                class="h-full object-cover"
-                                src="img/paper.png"
-                                alt="Paper"
-                            />
-                        </div>
-                        <div
-                            class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
-                            id="scissors"
-                        >
-                            <img
-                                class="h-full object-cover"
-                                src="img/scissors.png"
-                                alt="Scissors"
-                            />
-                        </div>
+            <div class="title-bottom">Question 2</div>
+        </div>
+        <!-- Level 2 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 2</div>
+            <div class="content">
+                <label class="block" for="l2q1Input">
+                    Check your number if it is a multiple of 5 or not.
+                </label>
+                <input class="block w-full border-black border rounded p-2 mt-2" type="text" maxlength="15"
+                    id="l2q1Input" placeholder="Enter a number here..." />
+                <input id="l2q1Btn" type="submit" value="Check"
+                    class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200" />
+                <span class="text-yellow-500 ml-2" id="l2q1Result"></span>
+            </div>
+            <div class="title-bottom">Question 1</div>
+        </div>
+        <!-- Level 2 Question 2 -->
+        <div class="container">
+            <div class="title-top">Level 2</div>
+            <div class="content">
+                <label class="block" for="l2q2Input">
+                    Enter your mark to get your grade:
+                </label>
+                <input class="block w-full border-black border rounded p-2 mt-2" type="number" id="l2q2Input"
+                    placeholder="Enter mark here..." />
+                <input id="l2q2Btn" type="submit" value="Check"
+                    class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200" />
+                <span class="text-yellow-500 ml-2" id="l2q2Result"></span>
+            </div>
+            <div class="title-bottom">Question 2</div>
+        </div>
+        <!-- Level 3 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 3</div>
+            <div class="content">
+                <label for="l3q1Input" class="block">Enter a number to genarate even numbers:</label>
+                <input type="text" id="l3q1Input" placeholder="0 - 200 max" maxlength="15"
+                    class="block w-full border-black border rounded p-2 mt-2" />
+                <input type="submit" value="Genarate" id="l3q1Btn"
+                    class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200" />
+                <span class="text-yellow-500 ml-2" id="l3q1Result"></span>
+            </div>
+            <div class="title-bottom">Question 1</div>
+        </div>
+        <!-- Level 3 Question 2 -->
+        <div class="container">
+            <div class="title-top">Level 3</div>
+            <div class="content text-center">
+                <p>Guess Nuru's favorite number</p>
+                <button id="l3q2Btn" class="my-2 border border-black px-3 py-1 rounded bg-yellow-300">
+                    Start the Game
+                </button>
+                <p class="text-yellow-500 ml-2" id="l3q2Result"></p>
+            </div>
+            <div class="title-bottom">Question 2</div>
+        </div>
+        <!-- Level 3 Question 3 -->
+        <div class="container">
+            <div class="title-top">Level 3</div>
+            <div class="content">
+                <label for="l3q3Input" class="block">Enter your name:</label>
+                <input type="text" id="l3q3Input" placeholder="Your name..." maxlength="16"
+                    class="block w-full border-black border rounded p-2 mt-2" />
+                <input type="submit" value="Get your username" id="l3q3Btn"
+                    class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200" />
+                <span class="text-yellow-500 ml-2" id="l3q3Result"></span>
+            </div>
+            <div class="title-bottom">Question 3</div>
+        </div>
+        <!-- Level 4 Qustion 1 -->
+        <div class="container">
+            <div class="title-top">Level 4</div>
+            <div class="content">
+                <p>
+                    Question: For a given array with marks of students ->
+                    [85, 97, 44, 37, 76, 60]
+                </p>
+                <p>Find the average marks of the entire class.</p>
+                <p class="text-yellow-500" id="l4q1Result"></p>
+            </div>
+            <div class="title-bottom">Question 1</div>
+        </div>
+        <!-- Level 4 Qustion 2 -->
+        <div class="container">
+            <div class="title-top">Level 4</div>
+            <div class="content">
+                <p>
+                    Question: For a given array with prices of 5 items ->
+                    [250, 645, 300, 900, 50]
+                </p>
+                <p>
+                    All items have an offer of 10% OFF on them. Change the
+                    array to store final price after applying offer.
+                </p>
+                <p class="text-yellow-500" id="l4q2Result"></p>
+            </div>
+            <div class="title-bottom">Question 2</div>
+        </div>
+        <!-- Level 4 Qustion 3 -->
+        <div class="container">
+            <div class="title-top">Level 4</div>
+            <div class="content">
+                <p>
+                    Question: "Bloomberg", "Microsoft", "Uber", "Google",
+                    "IBM", "Netflix"
+                </p>
+                <p>a. Remove the first company.</p>
+                <p>b. Remove Uber & add Ola in its place.</p>
+                <p>c. Add Amazon at the end.</p>
+                <p class="text-yellow-500" id="l4q3Result"></p>
+            </div>
+            <div class="title-bottom">Question 3</div>
+        </div>
+        <!-- Level 5 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 5</div>
+            <div class="content">
+                <label for="l5q1Input" class="block">Vowel calculator:</label>
+                <input type="text" id="l5q1Input" placeholder="Enter a text..."
+                    class="block w-full border-black border rounded p-2 mt-2" />
+                <input type="submit" value="Count" id="l5q1Btn"
+                    class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200" />
+                <span class="text-yellow-500 ml-2" id="l5q1Result"></span>
+            </div>
+            <div class="title-bottom">Question 1</div>
+        </div>
+        <!-- Level 5 Question 2 -->
+        <div class="container">
+            <div class="title-top">Level 5</div>
+            <div class="content">
+                <label for="l5q2Input" class="block">Vowel calculator: ( Using Arrow Function )</label>
+                <input type="text" id="l5q2Input" placeholder="Enter a text..."
+                    class="block w-full border-black border rounded p-2 mt-2" />
+                <input type="submit" value="Count" id="l5q2Btn"
+                    class="border border-black px-3 py-1 mt-2 cursor-pointer hover:bg-yellow-200" />
+                <span class="text-yellow-500 ml-2" id="l5q2Result"></span>
+            </div>
+            <div class="title-bottom">Question 2</div>
+        </div>
+        <!-- Level 5 Question 3 -->
+        <div class="container">
+            <div class="title-top">Level 5</div>
+            <div class="content">
+                <p>
+                    Question: For a given array of numbers, print the square
+                    of each vlaue using the forEach loop.
+                </p>
+                <p>Exmp: [ 1, 2, 3, 4, 5, 6, 7 ]</p>
+                <p class="text-yellow-500" id="l5q3Result"></p>
+            </div>
+            <div class="title-bottom">Question 3</div>
+        </div>
+        <!-- Level 5 Question 4 -->
+        <div class="container">
+            <div class="title-top">Level 5</div>
+            <div class="content">
+                <p>
+                    Question: For a given array of marks of students, Filter
+                    out of the marks of students that scored 90+.
+                </p>
+                <p>Exmp: [ 84, 91, 96, 88, 90, 99, 79, 86]</p>
+                <p class="text-yellow-500" id="l5q4Ans">Answer:</p>
+            </div>
+            <div class="title-bottom">Question 4</div>
+        </div>
+        <!-- Level 5 Question 5 -->
+        <div class="container">
+            <div class="title-top">Level 5</div>
+            <div class="content">
+                <label for="l5q5Input" class="block">
+                    Enter a number between 2-16:
+                </label>
+                <input type="number" id="l5q5Input" placeholder="Enter a number..."
+                    class="block w-full border-black border rounded p-2 mt-2" />
+                <input type="submit" value="Proccess" id="l5q5Btn"
+                    class="border border-black px-3 py-1 my-2 cursor-pointer hover:bg-yellow-200" />
+                <span class="text-red-500 ml-2" id="l5q5Err"></span>
+                <p class="text-yellow-500" id="l5q5R1"></p>
+                <p class="text-yellow-500" id="l5q5R2"></p>
+                <p class="text-yellow-500" id="l5q5R3"></p>
+            </div>
+            <div class="title-bottom">Question 5</div>
+        </div>
+        <!-- Level 6 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 6</div>
+            <div class="content text-center">
+                <h2 id="l6q1">Hello JavaScript</h2>
+            </div>
+            <div class="title-bottom">Quesiton 1</div>
+        </div>
+        <!-- Level 6 Question 2 -->
+        <div class="container">
+            <div class="title-top">Level 6</div>
+            <div class="content flex justify-center items-center gap-1">
+                <div class="box h-16 w-16 bg-indigo-400 border-2 border-black text-center text-yellow-500"></div>
+                <div class="box h-16 w-16 bg-indigo-400 border-2 border-black text-center text-yellow-500"></div>
+                <div class="box h-16 w-16 bg-indigo-400 border-2 border-black text-center text-yellow-500"></div>
+            </div>
+            <div class="title-bottom">Quesiton 2</div>
+        </div>
+        <!-- Level 7 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 7</div>
+            <div class="content text-center" id="l7q1"></div>
+            <div class="title-bottom">Quesiton 1</div>
+        </div>
+        <!-- Level 7 Question 2 -->
+        <div class="container">
+            <div class="title-top">Level 7</div>
+            <div class="content text-center">
+                <p class="py-1 px-3 rounded-full" id="l7q2">
+                    Hi, I am a paragraph.
+                </p>
+            </div>
+            <div class="title-bottom">Quesiton 1</div>
+        </div>
+        <!-- Level 8 Question 1 -->
+        <div class="container">
+            <div class="title-top mode">Level 8</div>
+            <div class="content h-20 flex justify-center items-center mode">
+                <button class="border border-black py-1 px-4 rounded-full mode" id="l8q1Btn">
+                    Dark Mode
+                </button>
+            </div>
+            <div class="title-bottom mode">Question 1</div>
+        </div>
+        <!-- Level 9 -->
+        <div class="container" id="active">
+            <div class="title-top">Level 9</div>
+            <div class="content text-center space-y-4 md:space-y-7">
+                <div class="choices flex justify-center items-center gap-3 md:gap-5 lg:gap-10">
+                    <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
+                        id="rock">
+                        <img class="h-full object-cover" src="img/rock.png" alt="Rock" />
                     </div>
-                    <!--  -->
-                    <div
-                        class="score-board flex justify-evenly items-center gap-5"
-                    >
-                        <div class="user">
-                            <p id="user" class="text-3xl md:text-5xl">0</p>
-                            <p>You</p>
-                        </div>
-                        <div class="com">
-                            <p id="com" class="text-3xl md:text-5xl">0</p>
-                            <p>Com</p>
-                        </div>
+                    <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
+                        id="paper">
+                        <img class="h-full object-cover" src="img/paper.png" alt="Paper" />
                     </div>
-                    <!--  -->
-                    <div>
-                        <p
-                            class="bg-yellow-500 text-white text-lg py-2 inline-block rounded-full px-6 md:text-2xl"
-                            id="info"
-                        >
-                            Tap one to start
-                        </p>
-                    </div>
-                    <!-- audio -->
-                    <div class="hidden">
-                        <audio
-                            type="audio/mpeg"
-                            src="audio/draw.MP3"
-                            id="draw"
-                        ></audio>
-                        <audio
-                            type="audio/mpeg"
-                            src="audio/correct.MP3"
-                            id="correct"
-                        ></audio>
-                        <audio
-                            type="audio/mpeg"
-                            src="audio/wrong.MP3"
-                            id="wrong"
-                        ></audio>
+                    <div class="choice w-16 h-16 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex justify-center items-center hover:border-4 border-black cursor-pointer"
+                        id="scissors">
+                        <img class="h-full object-cover" src="img/scissors.png" alt="Scissors" />
                     </div>
                 </div>
-                <div class="title-bottom">Stone, Paper & Scissors</div>
-            </div>
-            <!-- Level 10 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 10</div>
-                <div class="content">
-                    <p>
-                        Welcome,
-                        <span id="l10q1Name" class="bg-yellow-500"></span>
-                    </p>
-                    <p>
-                        Your email:
-                        <span id="l10q1Email" class="bg-yellow-500"></span>
-                    </p>
-                    <p>
-                        Student:
-                        <span id="l10q1Msg" class="bg-yellow-500"></span>
+                <!--  -->
+                <div class="score-board flex justify-evenly items-center gap-5">
+                    <div class="user">
+                        <p id="user" class="text-3xl md:text-5xl">0</p>
+                        <p>You</p>
+                    </div>
+                    <div class="com">
+                        <p id="com" class="text-3xl md:text-5xl">0</p>
+                        <p>Com</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div>
+                    <p class="bg-yellow-500 text-white text-lg py-2 inline-block rounded-full px-6 md:text-2xl"
+                        id="info">
+                        Tap one to start
                     </p>
                 </div>
-                <div class="title-bottom">Question 1</div>
-            </div>
-            <!-- Level 10 Question 2 -->
-            <div class="container">
-                <div class="title-top">Level 10</div>
-                <div class="content">
-                    <p>
-                        Teacher:
-                        <span id="l10q2Msg" class="bg-yellow-500"></span>
-                    </p>
+                <!-- audio -->
+                <div class="hidden">
+                    <audio type="audio/mpeg" src="audio/draw.MP3" id="draw"></audio>
+                    <audio type="audio/mpeg" src="audio/correct.MP3" id="correct"></audio>
+                    <audio type="audio/mpeg" src="audio/wrong.MP3" id="wrong"></audio>
                 </div>
-                <div class="title-bottom">Question 2</div>
             </div>
-            <!-- Level 11 Question 1 -->
-            <div class="container">
-                <div class="title-top">Level 11</div>
-                <div class="content text-center">Upcomming....</div>
-                <div class="title-bottom">Question 1</div>
+            <div class="title-bottom">Stone, Paper & Scissors</div>
+        </div>
+        <!-- Level 10 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 10</div>
+            <div class="content">
+                <p>
+                    Welcome,
+                    <span id="l10q1Name" class="bg-yellow-500"></span>
+                </p>
+                <p>
+                    Your email:
+                    <span id="l10q1Email" class="bg-yellow-500"></span>
+                </p>
+                <p>
+                    Student:
+                    <span id="l10q1Msg" class="bg-yellow-500"></span>
+                </p>
             </div>
-        </main>
-        <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
-        <footer class="title-bottom">
-            <p>Created by Nuru</p>
-        </footer>
-    </body>
-    <!--~~~~~~~~~~~~~~~ Js ~~~~~~~~~~~~~~~-->
-    <script src="main.js"></script>
+            <div class="title-bottom">Question 1</div>
+        </div>
+        <!-- Level 10 Question 2 -->
+        <div class="container">
+            <div class="title-top">Level 10</div>
+            <div class="content">
+                <p>
+                    Teacher:
+                    <span id="l10q2Msg" class="bg-yellow-500"></span>
+                </p>
+            </div>
+            <div class="title-bottom">Question 2</div>
+        </div>
+        <!-- Level 11 Question 1 -->
+        <div class="container">
+            <div class="title-top">Level 11</div>
+            <div class="content text-center">
+                <button id="l11Btn" class="rounded py-2 mb-2 bg-slate-600 text-white block w-full h-16 text-lg">
+                    Reveal the secret
+                </button>
+                <p class="py-3 bg-rose-500 rounded text-white font-bold text-xl">
+                    <span id="l11Result1">_</span>
+                    <span id="l11Result2">_</span>
+                    <span id="l11Result3">_</span>
+                </p>
+            </div>
+            <div class="title-bottom">Self Practice</div>
+        </div>
+    </main>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer class="title-bottom">
+        <p>Created by Nuru</p>
+    </footer>
+</body>
+<!--~~~~~~~~~~~~~~~ Js ~~~~~~~~~~~~~~~-->
+<script src="main.js"></script>
+
 </html>
